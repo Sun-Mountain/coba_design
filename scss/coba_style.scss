@@ -1,0 +1,62 @@
+// Colors
+$deep-purple: #673ab7;
+$light-purple: #ede2ff;
+$indigo: #CED3DC;
+$cyan: #00bcd4;
+$light-cyan: #e3f2f5;
+$green: #8bc34a;
+$light-green: #edf7e2;
+
+// Neutrals
+$dark-grey: #444444;
+$white: #ffffff;
+$black: #000000;
+
+body {
+    background-color: $indigo;
+    margin: 0 auto;
+}
+
+#home-btn-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+
+    .btn {
+        border-radius: 15px;
+        color: $dark-grey;
+        display: inline-block;
+        margin: 15px auto;
+        padding: 15px;
+        width: 50%;
+
+        // button font
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .btn:focus { outline: 0; }
+
+    @for $i from 1 through 3 {
+        #btn-#{$i} {
+            $border-line: 3px solid;
+            @if $i == 1 {
+                background-color: $light-purple;
+                border: $border-line $deep-purple;
+            } @else if $i == 2 {
+                background-color: $light-cyan;
+                border: $border-line $cyan;
+            } @else if $i == 3 {
+                background-color: $light-green;
+                border: $border-line $green;
+            }
+        }
+    }
+}
