@@ -32,6 +32,18 @@ body {
     border-radius: 15px;
     margin: 5px;
     padding: 10px; }
+  #volunteer-prompt .info-check-container {
+    display: flex;
+    flex-direction: column; }
+  #volunteer-prompt .info-check-container {
+    margin: 5px 0; }
+  #volunteer-prompt .review-label {
+    font-weight: 550; }
+  #volunteer-prompt #notes {
+    flex-direction: column;
+    margin: 10px 0; }
+    #volunteer-prompt #notes .review-answer {
+      margin: 10px 0; }
   #volunteer-prompt #promt-btns {
     margin: 15px 0; }
     #volunteer-prompt #promt-btns input {
@@ -58,14 +70,15 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 50%; }
   #home-btn-container .btn {
     border-radius: 15px;
     color: #444444;
     display: inline-block;
     margin: 15px auto;
     padding: 15px;
-    width: 70%;
+    width: 80%;
     font-size: 20px;
     font-weight: 500; }
   #home-btn-container .btn:focus {
